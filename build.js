@@ -18,7 +18,7 @@ delays.forEach(function (delay) {
     return;
   }
   var o = JSON.parse(JSON.stringify(loadJson));
-  o.values.push(delay);
+  o.values.push("schedule_shutdown:delay/" + delay);
   zipFiles[delay].folder("data").folder("minecraft").folder("tags").folder("functions").file("load.json", JSON.stringify(o));
 });
 
@@ -29,7 +29,7 @@ function addFile(path, data) {
 }
 
 // options is optional
-Glob.glob("./src/data/**/*.mcfunction")
+Glob.glob("./src/**")
   .then(function (files) {
     files.forEach((file) => {
       if (fs.statSync(file).isDirectory()) {

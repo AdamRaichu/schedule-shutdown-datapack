@@ -29,3 +29,17 @@ function schedule_shutdown:clear_all
 ## Auto-Shutdown
 
 I originally made this datapack because I had figured out how to host a Minecraft server in GitHub Actions, but needed the server to automatically close with enough time left to save the server state to the repo. That's why there is a 5 hour version (max GitHub workflow run time is 6 hours). The files with a name like `length_of_time.zip` will automatically run the function `schedule_shutdown:delay/length_of_time` when the server loads (using Minecraft's `load.json`). Unless you want your server to automatically shut down after a length of time, use `NO_AUTO_SHUTDOWN.zip`.
+
+## FAQ/Troubleshooting
+
+<details>
+  <summary>Failed to load function schedule_shutdown:shutdown</summary>
+
+  Same as `Couldn't load tag schedule_shutdown:all_shutdown as it is missing following references: schedule_shutdown:shutdown`.
+</details>
+
+<details>
+  <summary>Couldn't load tag schedule_shutdown:all_shutdown as it is missing following references: schedule_shutdown:shutdown</summary>
+
+  Make sure you set the `function-permission-level` in `server.properties` to `4` and try starting the server again. If you still have this error, please open an issue in the GitHub repo.
+</details>
