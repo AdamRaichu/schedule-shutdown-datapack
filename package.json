@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "glob": "^10.3.10",
+    "jszip": "^3.10.1"
+  }
+}

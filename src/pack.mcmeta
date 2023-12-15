@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "description": "Schedule a server shutdown. Requires permission level 4.",
+    "pack_format": 26
+  }
+}

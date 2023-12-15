@@ -1,0 +1,10 @@
+{
+  "values": [
+    "schedule_shutdown:delay/five_hours",
+    "schedule_shutdown:delay/one_hour",
+    "schedule_shutdown:delay/fifteen_minutes",
+    "schedule_shutdown:delay/five_minutes",
+    "schedule_shutdown:delay/one_minute",
+    "schedule_shutdown:shutdown"
+  ]
+}
