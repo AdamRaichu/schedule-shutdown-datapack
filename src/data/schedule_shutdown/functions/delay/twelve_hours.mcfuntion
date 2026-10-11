@@ -1,0 +1,2 @@
+say The server will close in twelve hours.
+schedule function schedule_shutdown:delay/five_hours 25200s
