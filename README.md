@@ -8,11 +8,14 @@ A Minecraft data pack containing functions that will stop the server after a dur
 
 Below is a list of available delays. Each one triggers the one below it. (I did this in a not dumb way, with 5hrs triggering 1hr after 4hrs, 1hr trigger 15min after 45min, etc.)
 
+- 24hrs
+- 12hrs
 - 5hrs
 - 1hr
 - 15min
 - 5min
 - 1min
+- 5sec
 
 Any scheduled shutdowns are cancelled upon starting the server.
 
